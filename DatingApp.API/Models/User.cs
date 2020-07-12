@@ -19,10 +19,10 @@ namespace DatingApp.API.Models
         public string Interests { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public ICollection<Photo> Photos { get; set; }
-        public ICollection<Like> Likers { get; set; } // Ceux que je like
-        public ICollection<Like> Likees { get; set; } // Ceux qui m'ont likés
-        public ICollection<Message> MessageSent { get; set; } // Ceux que j'ai envoyé
-        public ICollection<Message> MessageReceived { get; set; } // Ceux que j'ai reçu
+        public virtual ICollection<Photo> Photos { get; set; }
+        public virtual ICollection<Like> Likers { get; set; } // Ceux que je like
+        public virtual ICollection<Like> Likees { get; set; } // Ceux qui m'ont likés
+        public virtual ICollection<Message> MessageSent { get; set; } // Ceux que j'ai envoyé
+        public virtual ICollection<Message> MessageReceived { get; set; } // Ceux que j'ai reçu
     }
 }
